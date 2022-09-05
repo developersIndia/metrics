@@ -33,8 +33,8 @@ def generate_data(members, stats):
         if data is not None:
             datetime = get_readable_date(data[0])
             monthly_stats["month"] = datetime
-            monthly_stats["totalPageViews"] = data[1]
-            monthly_stats["uniquePageViews"] = data[2]
+            monthly_stats["uniquePageViews"] = data[1]
+            monthly_stats["totalPageViews"] = data[2]
             monthly_list.append(monthly_stats)
     
     subreddit_stats["traffic"].append({"monthly": monthly_list})
