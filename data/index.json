@@ -1,69 +1,7 @@
 {
-    "totalMembers": 65991,
-    "traffic": [
-        {
-            "monthly": [
-                {
-                    "month": "Sep 2022",
-                    "uniquePageViews": 25708,
-                    "totalPageViews": 194731
-                },
-                {
-                    "month": "Aug 2022",
-                    "uniquePageViews": 79519,
-                    "totalPageViews": 1286500
-                },
-                {
-                    "month": "Jul 2022",
-                    "uniquePageViews": 72922,
-                    "totalPageViews": 1235865
-                },
-                {
-                    "month": "Jun 2022",
-                    "uniquePageViews": 65250,
-                    "totalPageViews": 1125770
-                },
-                {
-                    "month": "May 2022",
-                    "uniquePageViews": 68184,
-                    "totalPageViews": 1511959
-                },
-                {
-                    "month": "Apr 2022",
-                    "uniquePageViews": 55932,
-                    "totalPageViews": 1037515
-                },
-                {
-                    "month": "Mar 2022",
-                    "uniquePageViews": 44565,
-                    "totalPageViews": 1237284
-                },
-                {
-                    "month": "Feb 2022",
-                    "uniquePageViews": 34057,
-                    "totalPageViews": 611577
-                },
-                {
-                    "month": "Jan 2022",
-                    "uniquePageViews": 34073,
-                    "totalPageViews": 721484
-                },
-                {
-                    "month": "Dec 2021",
-                    "uniquePageViews": 26612,
-                    "totalPageViews": 457923
-                },
-                {
-                    "month": "Nov 2021",
-                    "uniquePageViews": 26282,
-                    "totalPageViews": 413386
-                },
-                {
-                    "month": "Oct 2021",
-                    "uniquePageViews": 25502,
-                    "totalPageViews": 398132
-                }
-            ]
-        }
-    ]
+    "totalMembers": 66603,
+    "lastMonthUniquePageViews": 79519,
+    "lastMonthTotalPageViews": 1286500,
+    "yesterdayUniquePageViews": 18929,
+    "yesterdayTotalPageViews": 71916
 }
