@@ -1,12 +1,8 @@
-# metrics
+# metrics 📈
 
-> Generate community stats from subreddit
+> Generate devsIndia Community Stats from Subreddit
 
-## Scripts
-
-### [main.py](https://github.com/developersIndia/metrics/blob/main/main.py)
-
-Currently the stats are returned in following JSON format
+Currently the stats are generated in following JSON format:
 
 ```json
 {
@@ -18,7 +14,7 @@ Currently the stats are returned in following JSON format
 }
 ```
 
-## Setup
+## Setup 👷
 
 1. Clone the repo
 
@@ -37,7 +33,18 @@ Currently the stats are returned in following JSON format
    ```bash
    pip install -r requirements.txt
    ```
+4. Export environment variables. (Make sure you are have moderator privileges for the subreddit you want stats for).
+   ```
+   export REDDIT_CLIENT_ID=<YOU_REDDIT_APP_CLIENT_ID>
+   export REDDIT_CLIENT_SECRET=<YOU_REDDIT_APP_CLIENT_SECRET>
+   export REDDIT_PASSWORD=<REDDIT_PASSWORD>
+   export REDDIT_USER=<REDDIT_USERNAME>
+   ```
 
-## Resources & Learning Material
+## Resources & Learning Material 📚
 
 - [PRAW Docs](https://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html#praw.models.Subreddit.traffic)
+
+# 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
