@@ -37,7 +37,7 @@ def generate_data(members, stats):
             subreddit_stats["yesterdayUniquePageViews"] = data[1]
             subreddit_stats["yesterdayTotalPageViews"] = data[2]
 
-    with open (REPORT_PATH, 'w') as report:
+    with open(REPORT_PATH, 'w') as report:
         json.dump(subreddit_stats, report, indent=4)
 
 def find_traffic():

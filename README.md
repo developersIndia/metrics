@@ -41,6 +41,13 @@ Currently the stats are generated in following JSON format:
    export REDDIT_USER=<REDDIT_USERNAME>
    ```
 
+## Testing
+
+Run the following command to run the test suite:
+```bash
+python -m unittest
+```
+
 ## Resources & Learning Material 📚
 
 - [PRAW Docs](https://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html#praw.models.Subreddit.traffic)
