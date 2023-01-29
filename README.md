@@ -1,9 +1,10 @@
 # metrics 📈
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> Generate devsIndia Community Stats from Subreddit
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)
+[![Discord](https://img.shields.io/discord/669880381649977354?color=%237289da&label=Discord&logo=Discord)](https://discordapp.com/invite/MKXMSNC)
+[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/developersIndia?style=social)](https://www.reddit.com/r/developersIndia/)
+
+> Generate developersIndia Community Stats from Subreddit
 
 Currently the stats are generated in following JSON format:
 
