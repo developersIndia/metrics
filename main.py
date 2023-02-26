@@ -20,7 +20,7 @@ REPORT_PATH="data/index.json"
 last_month = get_last_month()
 last_day = get_last_day()
 
-def generate_data(members, stats, discord_data):
+def generate_data(members, stats, discord_stats):
     subreddit_stats = {}
 
     if members is not None:
@@ -39,7 +39,7 @@ def generate_data(members, stats, discord_data):
             subreddit_stats["yesterdayTotalPageViews"] = data[2]
 
     # populate discord data to the stats.
-    combined_stats = {**subreddit_stats, **discord_data}
+    combined_stats = {**subreddit_stats, **discord_stats}
     with open(REPORT_PATH, 'w') as report:
         json.dump(combined_stats, report, indent=4)
 
