@@ -76,7 +76,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://animesh-ghosh.github.io/"><img src="https://avatars.githubusercontent.com/u/34956994?v=4?s=100" width="100px;" alt=""/><br /><sub><b>MaDDogx</b></sub></a><br /><a href="https://github.com/developersIndia/metrics/commits?author=Animesh-Ghosh" title="Code">💻</a> <a href="https://github.com/developersIndia/metrics/commits?author=Animesh-Ghosh" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://animesh-ghosh.github.io/"><img src="https://avatars.githubusercontent.com/u/34956994?v=4?s=100" width="100px;" alt="MaDDogx"/><br /><sub><b>MaDDogx</b></sub></a><br /><a href="https://github.com/developersIndia/metrics/commits?author=Animesh-Ghosh" title="Code">💻</a> <a href="https://github.com/developersIndia/metrics/commits?author=Animesh-Ghosh" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://imkaka.github.io/"><img src="https://avatars.githubusercontent.com/u/27620628?v=4?s=100" width="100px;" alt="Anil Khatri"/><br /><sub><b>Anil Khatri</b></sub></a><br /><a href="https://github.com/developersIndia/metrics/commits?author=imkaka" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
