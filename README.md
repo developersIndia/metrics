@@ -14,7 +14,9 @@ Currently the stats are generated in following JSON format:
     "lastMonthUniquePageViews": 79519,
     "lastMonthTotalPageViews": 1286500,
     "yesterdayUniquePageViews": 18929,
-    "yesterdayTotalPageViews": 71916
+    "yesterdayTotalPageViews": 71916,
+    "discordTotalMembers": 7269,
+    "discordTotalActiveMembers": 633
 }
 ```
 
@@ -37,14 +39,18 @@ Currently the stats are generated in following JSON format:
    ```bash
    pip install -r requirements.txt
    ```
-4. Export environment variables. (Make sure you are have moderator privileges for the subreddit you want stats for).
-   ```
-   export REDDIT_CLIENT_ID=<YOU_REDDIT_APP_CLIENT_ID>
-   export REDDIT_CLIENT_SECRET=<YOU_REDDIT_APP_CLIENT_SECRET>
-   export REDDIT_PASSWORD=<REDDIT_PASSWORD>
-   export REDDIT_USER=<REDDIT_USERNAME>
-   ```
-
+4. Export environment variables.
+   * Reddit(Make sure you are have moderator privileges for the subreddit you want stats for).
+      ```
+      export REDDIT_CLIENT_ID=<YOU_REDDIT_APP_CLIENT_ID>
+      export REDDIT_CLIENT_SECRET=<YOU_REDDIT_APP_CLIENT_SECRET>
+      export REDDIT_PASSWORD=<REDDIT_PASSWORD>
+      export REDDIT_USER=<REDDIT_USERNAME>
+      ```
+   * Discord(If possible set expiry to never)
+      ```
+      export DISCORD_INVITE_CODE=<YOUR_DISCORD_INVITE_CODE>
+      ```
 ## Testing
 
 Run the following command to run the test suite:

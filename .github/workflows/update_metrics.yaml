@@ -2,7 +2,7 @@ name: r/developersIndia metrics updater
 
 on:
   schedule:
-    # Everyday 9PM (IST) 
+    # Everyday 9PM (IST)
     - cron:  '30 15 * * *'
   workflow_dispatch:
 
@@ -22,12 +22,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Get Latest Subreddit Stats
+    - name: Get Latest Subreddit & Discord Stats
       env:
         REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
         REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
         REDDIT_PASSWORD: ${{ secrets.REDDIT_PASSWORD }}
         REDDIT_USER: ${{ secrets.REDDIT_USER }}
+        DISCORD_INVITE_CODE: ${{ secrets.DISCORD_INVITE_CODE }}
       run: |
         python main.py
     - name: Commit files

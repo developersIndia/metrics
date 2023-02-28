@@ -3,10 +3,9 @@
 '''
 import praw
 import os
-import pprint
-import time
 import json
 from datetime import datetime, timedelta
+from discord import get_discord_stats
 from utils import *
 
 client_id = os.environ["REDDIT_CLIENT_ID"]
@@ -14,12 +13,14 @@ client_secret = os.environ["REDDIT_CLIENT_SECRET"]
 reddit_pass = os.environ["REDDIT_PASSWORD"]
 reddit_user = os.environ["REDDIT_USER"]
 
+discord_invite_code = os.environ["DISCORD_INVITE_CODE"]
+
 REPORT_PATH="data/index.json"
 
 last_month = get_last_month()
 last_day = get_last_day()
 
-def generate_data(members, stats):
+def generate_data(members, stats, discord_stats):
     subreddit_stats = {}
 
     if members is not None:
@@ -37,8 +38,10 @@ def generate_data(members, stats):
             subreddit_stats["yesterdayUniquePageViews"] = data[1]
             subreddit_stats["yesterdayTotalPageViews"] = data[2]
 
+    # populate discord data to the stats.
+    combined_stats = {**subreddit_stats, **discord_stats}
     with open(REPORT_PATH, 'w') as report:
-        json.dump(subreddit_stats, report, indent=4)
+        json.dump(combined_stats, report, indent=4)
 
 def find_traffic():
     reddit = praw.Reddit(
@@ -50,7 +53,10 @@ def find_traffic():
     )
     stats = reddit.subreddit("developersIndia").traffic()
     members = reddit.subreddit("developersIndia").subscribers
-    generate_data(members, stats)
+
+    # Discord server data
+    discord_stats = get_discord_stats(discord_invite_code)
+    generate_data(members, stats, discord_stats)
 
 if __name__ == '__main__':
     find_traffic()
