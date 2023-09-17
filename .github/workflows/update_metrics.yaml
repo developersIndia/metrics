@@ -1,9 +1,9 @@
 name: r/developersIndia metrics updater
 
 on:
-#   schedule:
+  schedule:
     # Everyday 9PM (IST)
-#     - cron:  '30 15 * * *'
+    - cron:  '30 15 * * *'
   workflow_dispatch:
 
 jobs:
